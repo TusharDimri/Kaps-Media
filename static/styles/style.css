@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p:hover{
+    cursor: default;
+}
+
+input:focus{
+    outline: none;
+}
+/*  Navbar */
+
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    background-color: #2F8F9D;
+}
+
+.navbar-image {
+    width: 9rem;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #B3E8E5;
+}
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+.home-container{
+    padding: 10% 7%;
+    background-color: #2F8F9D;
+    color: white;
+}
+
+
+.home-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.home-text {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.home-contact{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.home-button{
+    margin-left: 5px;
+    background-color: #82DBD8;
+    color: black;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.home-button:hover{
+    cursor: pointer;
+}
+
+.home-input{
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.home-input::placeholder{
+    color: black;
+}

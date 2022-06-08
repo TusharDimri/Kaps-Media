@@ -1,16 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Joan&family=Roboto:ital@1&display=swap');
+
+@media screen and (max-width: 512px) {
+    .home-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+    .home-button{
+        margin: 10px;
+    }
+    .home-input::placeholder{
+        text-align: center;
+    }
+}
+
 body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p:hover{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p:hover {
     cursor: default;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
-/*  Navbar */
 
+.font-1 {
+    font-family: Joan;
+}
+
+.font-2 {
+    font-family: Roboto;
+}
+
+.font-3 {
+    font-family: Gentium Plus;
+}
+
+
+/*  Navbar */
 
 .navbar {
     padding: 0;
@@ -47,7 +82,9 @@ input:focus{
     justify-content: flex-end !important;
 }
 
-.home-container{
+/* Home */
+
+.home-container {
     padding: 10% 7%;
     background-color: #2F8F9D;
     color: white;
@@ -57,41 +94,71 @@ input:focus{
 .home-heading {
     text-align: center;
     font-weight: bold;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
 }
 
 .home-text {
     text-align: center;
     margin-top: 16px;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 
-.home-contact{
+.home-contact {
     display: flex;
     justify-content: center;
     padding: 3%;
+    font-size: 1.3rem;
 }
 
-.home-button{
-    margin-left: 5px;
+.home-button {
+    margin-left: 12px;
     background-color: #82DBD8;
     color: black;
     border: 1px solid black;
     border-radius: 7px;
+    white-space: normal !important;
+    word-wrap: break-word;
+    
 }
 
-.home-button:hover{
+.home-button:hover {
     cursor: pointer;
+    color: white;
+    border-color: white;
+    background-color: #2F8F9D;
 }
 
-.home-input{
-    text-align: center;
-    padding: 3px;
+.home-input {
+    padding: 5px;
     border: 1px solid black;
     border-radius: 7px;
+    width: 15rem;
+    height: 2.3rem;
 }
 
-.home-input::placeholder{
-    color: black;
+.home-input::placeholder {
+    padding-left: 3px;
+}
+
+/* About Section */
+
+
+.about-container {
+    position: relative;
+    color: #2F8F9D;
+    padding: 5% 7%;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about-heading {
+    /* color: #2F8F9D; */
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 32px;
 }

@@ -44,7 +44,6 @@ input:focus {
     font-family: Gentium Plus;
 }
 
-
 /*  Navbar */
 
 .navbar {
@@ -58,7 +57,7 @@ input:focus {
     height: 7rem;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    margin: 10px 0;
 }
 
 
@@ -82,7 +81,25 @@ input:focus {
     justify-content: flex-end !important;
 }
 
+.ddown-menu{
+    background-color: #B3E8E5;
+
+}
+
+.ddown-menu a{
+    color: black;
+}
+
+.ddown-menu a:hover{
+    color: #2F8F9D;
+}
+
+
 /* Home */
+
+#home{
+    min-height: 100vh;
+}
 
 .home-container {
     padding: 10% 7%;
@@ -181,18 +198,22 @@ input:focus {
 
 .services-card{
     display: block;
-    margin:  7% auto;
+    margin:  0 auto;
     width: 70%;
     background-color: #3BACB6;
     color: white ;
     text-align: center;
 }
 
+.pad-card{
+    padding: 5% 0;
+}
+
 .services-image{
     display: block;
     margin: 13px auto;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
 }
 
 .service-title{
@@ -206,3 +227,62 @@ input:focus {
 .service-description-body{
     text-align: center;
 }
+
+/* Contact */
+
+.contact-image{
+    width: 55%;
+    height: 65%;
+}
+
+.contact-image:hover{
+    transform: rotateY(35deg) scale(1.1);
+}
+
+.contact-image:hover::before{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+    
+
+.contact-box{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pad-contact{
+    padding: 5%;
+}
+
+.contact-heading{
+    color: #2F8F9D;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.contact-image{
+    display: block;
+    margin: auto;
+}
+
+/* Up Arrow */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2F8F9D; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 10px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #82DBD8; /* Add a dark-grey background on hover */
+  }

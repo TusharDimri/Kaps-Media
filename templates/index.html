@@ -8,8 +8,16 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <title>Kaps Media</title>
+    <!-- My CSS -->
     <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/jpg" href="{{url_for('static', filename='images/favicon.ico')}}" />
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -17,7 +25,7 @@
     <section id="home">
         <nav class="navbar navbar-expand-lg  navbar-color">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     <img src="{{url_for('static', filename='images/Logo.jpeg')}}" alt="Logo" class="navbar-image" />
                 </a>
 
@@ -35,11 +43,21 @@
                         <li class="nav-item px-3">
                             <a class="nav-link font-2" href="#about">About</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link font-2" href="#services">Services</a>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle font-2" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu ddown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item font-2" href="#digital-marketing">Digital Marketing</a></li>
+                                <li><a class="dropdown-item font-2" href="#smm">Social Media Marketing</a></li>
+                                <li><a class="dropdown-item font-2" href="#web-app-development">Web Application
+                                        Development</a></li>
+                                <li><a class="dropdown-item font-2" href="#seo">Search Engine Optimization</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item px-3">
-                            <a class="nav-link font-2" href="#">Contact</a>
+                            <a class="nav-link font-2" href="#contact">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -103,7 +121,7 @@
             What We Offer
         </h1>
         <div class="container-fluid">
-            <div class="card services-card">
+            <!-- <div class="card services-card">
                 <img src="../static/images/Social Media Management.jpg" alt="" class="services-image card-body-top">
                 <div class="card-body service-card-body">
                     <h5 class="card-title service-title font-2">Social Media Management</h5>
@@ -116,32 +134,129 @@
 
                         Luckily, our team of content strategists & creatives is here to help.</p>
                 </div>
+            </div> -->
+            <div class="pad-card" id="digital-marketing">
+                <div class="card services-card">
+                    <img src="../static/images/Digital Marketing.jpg" alt="" class="services-image card-body-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title service-title font-2">Digital Marketing</h5>
+                        <p class="card-text service-description font-3">Done right, content marketing just be the most
+                            effective channels there is to
+                            achieve sustainable, profitable growth for your business.
+
+                            Unfortunately, most brands lack the strategy and diverse content creation resources needed
+                            to
+                            accomplish this on their own. After all, there's plenty more to do!
+
+                            Luckily, our team of content strategists & creatives is here to help.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card services-card">
-                <img src="../static/images/Web Development.jpg" alt="" class="services-image card-body-top">
-                <div class="card-body service-card-body">
-                    <h5 class="card-title service-title font-2">Web Application Development</h5>
-                    <p class="card-text service-description font-3">
-                        Across industries, business models, and company sizes, one thing remains true. Companies that
-                        invest deeply in their content marketing engine acquire new customers consistently, increase
-                        customer satisfaction, and build unmatched customer loyalty.
+            <div class="pad-card" id="smm">
+                <div class="card services-card">
+                    <img src="../static/images/Social Media Management.jpg" alt="" class="services-image card-body-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title service-title font-2">Social Media Management</h5>
+                        <p class="card-text service-description font-3">
+                            We offer full-service social media management services. So, we transform your social media
+                            presence with high-quality content, daily activity, monitoring-engagement and increased
+                            followers. This service will attract targeted followers to then convert into loyal customers
+                            while telling your brand's story throughout.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pad-card" id="web-app-development">
+                <div class="card services-card">
+                    <img src="../static/images/Web Development.jpg" alt="" class="services-image card-body-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title service-title font-2">Web Application Development</h5>
+                        <p class="card-text service-description font-3">
+                            Across industries, business models, and company sizes, one thing remains true. Companies
+                            that
+                            invest deeply in their content marketing engine acquire new customers consistently, increase
+                            customer satisfaction, and build unmatched customer loyalty.
 
-                        With a strategic combination of content designed to increase traffic to your website, convert
-                        those visitors into leads, and help you retain existing customers - we can turn your content
-                        market presence into a significant competitive advantage.
+                            With a strategic combination of content designed to increase traffic to your website,
+                            convert
+                            those visitors into leads, and help you retain existing customers - we can turn your content
+                            market presence into a significant competitive advantage.
 
-                        Our team of experts can build on whatever foundation you've built so far, and supercharge your
-                        organic growth.
-                    </p>
+                            Our team of experts can build on whatever foundation you've built so far, and supercharge
+                            your
+                            organic growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pad-card" id="seo">
+                <div class="card services-card">
+                    <img src="../static/images/SEO.jpg" alt="" class="services-image card-body-top">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title service-title font-2">Search Engine Optimization</h5>
+                        <p class="card-text service-description font-3">
+                            Look - we get it. There's a lot of noise in the world of SEO. Between the people who have
+                            absolutely no idea what they're talking about, the PBNs, spammy link building, and more,
+                            it's
+                            gotten a bad wrap.
+                        </p>
+                        <p class="card-text service-description font-3">
+                            We're not here for that. If you want clean, scalable SEO that can help you grow your organic
+                            traffic profitably, you've come to the right place.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="contact">
+        <h1 class="contact-heading">
+            Contact Us
+        </h1>
+        <div class="container-fluid pad-contact">
+            <div class="container-fluid contact-box">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="mailto:mirinal@kaps-media.com" class="contact-link" target="_top">
+                            <img src="../static/images/gmail.png" alt="Gmail" class="contact-image">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="https://www.linkedin.com/company/kaps-media/" class="contact-link" target="_blank">
+                            <img src="../static/images/linkedin.png" alt="Linked In" class="contact-image">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="https://www.instagram.com/invites/contact/?i=11pbogf1b011q&utm_content=ophwoux"
+                            class="contact-link" target="_blank">
+                            <img src="../static/images/instagram.png" alt="Contact" class="contact-image">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="https://join.slack.com/t/kaps-media/shared_invite/zt-1ajeqt1pe-CoRU_0CxY68KNG7hHtgfng"
+                            class="contact-link" target="_blank">
+                            <img src="../static/images/slack.png" alt="Slack" class="contact-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Go to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
+    <!-- MY Javascript -->
+    <script src="../static/js/index.js"></script>
 
 </body>
 

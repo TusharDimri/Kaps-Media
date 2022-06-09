@@ -143,22 +143,66 @@ input:focus {
 
 /* About Section */
 
-
 .about-container {
-    position: relative;
-    color: #2F8F9D;
     padding: 5% 7%;
 }
 
+.about-card{
+    background-color: #B3E8E5;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.about-heading {
+    color: #2F8F9D;
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
 .about-text {
+    color: #3BACB6;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 500;
 }
 
-.about-heading {
-    /* color: #2F8F9D; */
+
+/* Services Section */
+
+.services-heading{
+    text-align: center;
+    color: #2F8F9D;
     font-size: 3.2rem;
     font-weight: bold;
-    margin-bottom: 32px;
+}
+
+
+.services-card{
+    display: block;
+    margin:  7% auto;
+    width: 70%;
+    background-color: #3BACB6;
+    color: white ;
+    text-align: center;
+}
+
+.services-image{
+    display: block;
+    margin: 13px auto;
+    width: 80%;
+    height: 80%;
+}
+
+.service-title{
+    font-size: 2em;
+}
+
+.service-description{
+    font-size: 1.3em;
+}
+
+.service-description-body{
+    text-align: center;
 }

@@ -266,6 +266,42 @@ input:focus {
     margin: auto;
 }
 
+/* Footer Section */
+#footer{
+    background-color: #3BACB6;
+    height: 20rem;
+}
+
+.footer-img{
+    width: 6.5em;
+    height: 6.5em;
+    margin: 13px 0;
+}
+
+.footer-quote{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-icon{
+    color: #B3E8E5;
+    margin: 12px 13px;
+}
+
+.footer-icon:hover{
+    transform: rotateY(25deg) scale(1.1);
+}
+
+.footer-icon:hover::before{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
 /* Up Arrow */
 #myBtn {
     display: none; /* Hidden by default */

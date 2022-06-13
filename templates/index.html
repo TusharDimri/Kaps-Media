@@ -23,6 +23,20 @@
 <body>
 
     <section id="home">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert success-message font-2 alert-success alert-dismissible fade show" role="alert">
+            <strong>{{message}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+
+
+
         <nav class="navbar navbar-expand-lg  navbar-color">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#home">
@@ -62,10 +76,12 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
 
         <div class="home">
             <div class="container-fluid home-container">
+
 
                 <h1 class="home-heading font-1">KAPS MEDIA</h1>
                 <p class="home-text font-3">
@@ -73,15 +89,18 @@
                     media strategies to help our clients grow their online presence and generate leads.
                 </p>
 
-                <form action="/" class="home-contact font-3">
-                    <input type="text" placeholder="Enter your Email" class="home-input">
+
+
+                <form action="/contact" class="home-contact font-3" method="post">
+
+                    <input type="email" placeholder="Enter your Email" class="home-input" name="client-email" required>
                     <button type="submit" class="home-button">Schedule a Meeting</button>
                 </form>
 
             </div>
 
         </div>
-        </div>
+
     </section>
 
     <section id="about">
@@ -106,10 +125,8 @@
 
                     <p class="about-text font-1">
                         We at Kaps Media are a team of members who are very passionate about helping our clients'
-                        businesses grow. If you chose us as your social media marketing agency, then what you'll is a
-                        full-service digital marketing solution. We can manage your content, outreach, web development
-                        and design to ensure your business goals are met. Personalized solutions allow us to deliver the
-                        most value to your business.
+                        businesses grow. If you chose us as your social media marketing agency, then what you'll be
+                        getting is a full-service digital marketing solution. We can manage your content, outreach, web development and design to ensure your business goals are met. Personalized solutions allow us to deliver the most value to your business.
                     </p>
                 </div>
             </div>
@@ -219,24 +236,24 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <a href="mailto:mirinal@kaps-media.com" class="contact-link" target="_top">
-                            <img src="../static/images/gmail.png" alt="Gmail" class="contact-image">
+                            <img src="../static/images/gmail.svg" alt="Gmail" class="contact-image">
                         </a>
                     </div>
                     <div class="col-lg-3">
                         <a href="https://www.linkedin.com/company/kaps-media/" class="contact-link" target="_blank">
-                            <img src="../static/images/linkedin.png" alt="Linked In" class="contact-image">
+                            <img src="../static/images/linkedin.svg" alt="Linked In" class="contact-image">
                         </a>
                     </div>
                     <div class="col-lg-3">
                         <a href="https://www.instagram.com/invites/contact/?i=11pbogf1b011q&utm_content=ophwoux"
                             class="contact-link" target="_blank">
-                            <img src="../static/images/instagram.png" alt="Contact" class="contact-image">
+                            <img src="../static/images/instagram.svg" alt="Contact" class="contact-image">
                         </a>
                     </div>
                     <div class="col-lg-3">
                         <a href="https://join.slack.com/t/kaps-media/shared_invite/zt-1ajeqt1pe-CoRU_0CxY68KNG7hHtgfng"
                             class="contact-link" target="_blank">
-                            <img src="../static/images/slack.png" alt="Slack" class="contact-image">
+                            <img src="../static/images/slack.svg" alt="Slack" class="contact-image">
                         </a>
                     </div>
                 </div>
@@ -269,7 +286,7 @@
                 </div> -->
             </div>
             <div class="copyright font-1">
-               <p style="margin: 0;"> © Copyright Kaps Media </p>
+                <p style="margin: 0;"> © Copyright Kaps Media </p>
             </div>
         </div>
     </section>

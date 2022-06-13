@@ -98,7 +98,7 @@ input:focus {
 /* Home */
 
 #home{
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .home-container {
@@ -156,6 +156,38 @@ input:focus {
 
 .home-input::placeholder {
     padding-left: 3px;
+}
+
+
+.modal-title{
+    color: black;
+}
+
+.modal-body{
+    color: black;
+}
+
+.modal-close{
+    background-color: #2F8F9D;
+}
+
+.modal-submit{
+    background-color: #2F8F9D;
+}
+
+.modal-btn{
+    color: white;
+}
+
+.modal-btn:hover{
+    background-color: #3BACB6;
+}
+
+.success-message{
+    margin: 0;
+    text-align: center;
+    color: green;
+    border-radius: 0%;
 }
 
 /* About Section */
@@ -231,12 +263,12 @@ input:focus {
 /* Contact */
 
 .contact-image{
-    width: 55%;
+    width: 65%;
     height: 65%;
 }
 
 .contact-image:hover{
-    transform: rotateY(35deg) scale(1.1);
+    transform: rotateX(5deg) scale(1.1);
 }
 
 .contact-image:hover::before{
@@ -274,7 +306,7 @@ input:focus {
 }
 
 .footer-img{
-    width: 6.5em;
+    width: 6em;
     height: 6.5em;
     margin: 13px 0;
 }

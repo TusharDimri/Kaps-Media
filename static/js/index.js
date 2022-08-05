@@ -6,29 +6,32 @@
 
 
 $(document).ready(function () {
+  let windowSize = $(window).width;
+  if (windowSize > 480) {
     $('.dropdown-toggle').mouseover(function () {
-        $('.dropdown-menu').show();
+      $('.dropdown-menu').show();
     })
 
     $('.dropdown-toggle').mouseout(function () {
-        t = setTimeout(() => {
-            $('.dropdown-menu').hide();
-        }, 100);
+      t = setTimeout(() => {
+        $('.dropdown-menu').hide();
+      }, 100);
 
-        $('.dropdown-menu').on('mouseenter', function () {
-            $('.dropdown-menu').show();
-            clearTimeout(t);
-        }).on('mouseleave', () => {
-            $('.dropdown-menu').hide();
-        })
+      $('.dropdown-menu').on('mouseenter', function () {
+        $('.dropdown-menu').show();
+        clearTimeout(t);
+      }).on('mouseleave', () => {
+        $('.dropdown-menu').hide();
+      })
     })
+  }
 })
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
